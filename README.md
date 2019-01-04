@@ -5,8 +5,8 @@ Today everyone may find himself in need of rapidly optimzing batch of images in 
 
 <strong>gifsicle</strong> 	create and optimize GIF images<br />
 <strong>jpegtran</strong> 	lossless optimize JPEG images<br />
-<strong>jpegoptim</strong>       lossy optimize JPEG images<br />
-<strong>optipng</strong> 	lossless PNG optimization<br />
+<strong>jpegoptim</strong>  lossy optimize JPEG images<br />
+<strong>optipng</strong>    lossless PNG optimization<br />
 <strong>pngquant</strong> 	lossy PNG optimization<br />
 
 ### Lossless vs lossy image compression
