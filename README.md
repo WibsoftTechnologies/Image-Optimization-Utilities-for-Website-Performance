@@ -18,13 +18,17 @@ Lossy image will lose some quality like we can set quality to 85 0r 75 which wil
 ### Installing on Mac
 
 > brew install optipng
+
 > brew install jpegoptim
+
 > brew install gifsicle
 
 ### Installing on Linux
 
 > sudo apt-get install optipng
+
 > sudo apt-get install jpegoptim
+
 > sudo apt-get install gifsicle
 
 ### Command Line Examples:
@@ -64,5 +68,7 @@ Recursively optimizing images in current directory, case insensitive search of f
 Here are some aliases to keep commands nearby for fast run on the active directory images.
 
 > alias compress_png="optipng -o7 *.png"
+
 > alias compress_jpg="jpegoptim -m80 *.jpg"
+
 > alias compress_gif="gifsicle --batch -V -O2 *.gif"
