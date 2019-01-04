@@ -29,17 +29,17 @@ sudo apt-get install gifsicle<br />
 
 ### Command Line Examples:
 
-> jpegtran lib for lossles image optimization<br />
-jpegtran -copy none -optimize -progressive -outfile testimage-output.jpg testimage.jpg
+jpegtran lib for lossles image optimization<br />
+> jpegtran -copy none -optimize -progressive -outfile testimage-output.jpg testimage.jpg
 
-> jpegoptim lib for lossy image optimization<br />
-jpegoptim --strip-all -m 90 testimage.jpg
+jpegoptim lib for lossy image optimization<br />
+> jpegoptim --strip-all -m 90 testimage.jpg
 
-> optipng for PNG<br />
-optipng -o7 testimage.png
+optipng for PNG<br />
+> optipng -o7 testimage.png
 
-> gifsicle for PNG<br />
-gifsicle --batch -V -O2 testimage.gif
+gifsicle for PNG<br />
+> gifsicle --batch -V -O2 testimage.gif
 
 ### Optimize images from shell:
 Recursively optimizing images in current directory, case insensitive search of files using -iname
