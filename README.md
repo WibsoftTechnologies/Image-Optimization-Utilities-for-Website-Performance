@@ -61,7 +61,7 @@ Recursively optimizing images in current directory, case insensitive search of f
 > find 2019/01/ -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
 
 ### Example to search a specific folder with full path
-> find /var/www/vhosts/website.com/httpdocs/wp-content/uploads/2019 -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
+> find /home/user/httpdocs/wp-content/uploads/2019 -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
 
 
 ### Shell Command Aliases
