@@ -58,7 +58,7 @@ Recursively optimizing images in current directory, case insensitive search of f
 > find -type f -iname "\*.gif" -exec gifsicle --batch -V -O2 {} \;
 
 ### Example to search a specific folder with relative path
-> find 07/ -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
+> find 2019/01/ -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
 
 ### Example to search a specific folder with full path
 > find /var/www/vhosts/website.com/httpdocs/wp-content/uploads/2019 -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
