@@ -72,3 +72,9 @@ Here are some aliases to keep commands nearby for fast run on the active directo
 > alias compress_jpg="jpegoptim -m80 \*.jp\*g"
 
 > alias compress_gif="gifsicle --batch -V -O2 \*.gif"
+
+### Libraries Reference Sites
+
+https://www.lcdf.org/gifsicle/
+https://github.com/tjko/jpegoptim
+http://optipng.sourceforge.net/
