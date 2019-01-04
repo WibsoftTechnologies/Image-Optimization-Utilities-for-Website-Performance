@@ -17,15 +17,15 @@ Lossy image will lose some quality like we can set quality to 85 0r 75 which wil
 
 ### Installing on Mac
 
-brew install optipng<br />
-brew install jpegoptim<br />
-brew install gifsicle<br />
+> brew install optipng
+> brew install jpegoptim
+> brew install gifsicle
 
 ### Installing on Linux
 
-sudo apt-get install optipng<br />
-sudo apt-get install jpegoptim<br />
-sudo apt-get install gifsicle<br />
+> sudo apt-get install optipng
+> sudo apt-get install jpegoptim
+> sudo apt-get install gifsicle
 
 ### Command Line Examples:
 
@@ -45,24 +45,24 @@ gifsicle for PNG<br />
 Recursively optimizing images in current directory, case insensitive search of files using -iname
 
 ### Jpegoptim
-find -type f -iname "*.jp*g" -exec jpegoptim --strip-all {} \;
+> find -type f -iname "*.jp*g" -exec jpegoptim --strip-all {} \;
 
 ### OptiPNG
-find -type f -iname "*.png" -exec optipng -o7 {} \;
+> find -type f -iname "*.png" -exec optipng -o7 {} \;
 
 #### GifSicle
-find -type f -iname "*.gif" -exec gifsicle --batch -V -O2 {} \;
+> find -type f -iname "*.gif" -exec gifsicle --batch -V -O2 {} \;
 
 ### Example to search a specific folder with relative path
-find 07/ -type f -iname "*.jp*g" -exec jpegoptim --strip-all {} \;
+> find 07/ -type f -iname "*.jp*g" -exec jpegoptim --strip-all {} \;
 
 ### Example to search a specific folder with full path
-find /var/www/vhosts/website.com/httpdocs/wp-content/uploads/2019 -type f -iname "*.jp*g" -exec jpegoptim --strip-all {} \;
+> find /var/www/vhosts/website.com/httpdocs/wp-content/uploads/2019 -type f -iname "*.jp*g" -exec jpegoptim --strip-all {} \;
 
 
 ### Shell Command Aliases
 Here are some aliases to keep commands nearby for fast run on the active directory images.
 
-alias compress_png="optipng -o7 *.png"<br />
-alias compress_jpg="jpegoptim -m80 *.jpg"<br />
-alias compress_gif="gifsicle --batch -V -O2 *.gif"<br />
+> alias compress_png="optipng -o7 *.png"
+> alias compress_jpg="jpegoptim -m80 *.jpg"
+> alias compress_gif="gifsicle --batch -V -O2 *.gif"
