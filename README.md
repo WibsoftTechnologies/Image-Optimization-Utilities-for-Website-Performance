@@ -49,26 +49,26 @@ gifsicle for PNG<br />
 Recursively optimizing images in current directory, case insensitive search of files using -iname
 
 ### Jpegoptim
-> find -type f -iname "*.jp*g" -exec jpegoptim --strip-all {} \;
+> find -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
 
 ### OptiPNG
-> find -type f -iname "*.png" -exec optipng -o7 {} \;
+> find -type f -iname "\*.png" -exec optipng -o7 {} \;
 
 #### GifSicle
-> find -type f -iname "*.gif" -exec gifsicle --batch -V -O2 {} \;
+> find -type f -iname "\*.gif" -exec gifsicle --batch -V -O2 {} \;
 
 ### Example to search a specific folder with relative path
-> find 07/ -type f -iname "*.jp*g" -exec jpegoptim --strip-all {} \;
+> find 07/ -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
 
 ### Example to search a specific folder with full path
-> find /var/www/vhosts/website.com/httpdocs/wp-content/uploads/2019 -type f -iname "*.jp*g" -exec jpegoptim --strip-all {} \;
+> find /var/www/vhosts/website.com/httpdocs/wp-content/uploads/2019 -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
 
 
 ### Shell Command Aliases
 Here are some aliases to keep commands nearby for fast run on the active directory images.
 
-> alias compress_png="optipng -o7 *.png"
+> alias compress_png="optipng -o7 \*.png"
 
-> alias compress_jpg="jpegoptim -m80 *.jpg"
+> alias compress_jpg="jpegoptim -m80 \*.jp\*g"
 
-> alias compress_gif="gifsicle --batch -V -O2 *.gif"
+> alias compress_gif="gifsicle --batch -V -O2 \*.gif"
