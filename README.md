@@ -48,10 +48,10 @@ gifsicle for PNG<br />
 ### Optimize images from shell:
 Recursively optimizing images in current directory, case insensitive search of files using -iname
 
-### Jpegoptim
+#### Jpegoptim
 > find -type f -iname "\*.jp\*g" -exec jpegoptim --strip-all {} \;
 
-### OptiPNG
+#### OptiPNG
 > find -type f -iname "\*.png" -exec optipng -o7 {} \;
 
 #### GifSicle
