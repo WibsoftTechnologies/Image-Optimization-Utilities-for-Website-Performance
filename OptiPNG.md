@@ -1,4 +1,4 @@
-OptiPNG 0.6.5: Advanced PNG optimizer.
+<pre>OptiPNG 0.6.5: Advanced PNG optimizer.
 Copyright (C) 2001-2011 Cosmin Truta.
 
 Synopsis:
@@ -53,4 +53,4 @@ Examples:
     optipng file.png                            (default speed)
     optipng -o5 file.png                        (moderately slow)
     optipng -o7 file.png                        (very slow)
-    optipng -i1 -o7 -v -full -sim experiment.png
+    optipng -i1 -o7 -v -full -sim experiment.png</pre>
