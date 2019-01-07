@@ -82,3 +82,5 @@ https://www.lcdf.org/gifsicle/
 https://github.com/tjko/jpegoptim
 
 http://optipng.sourceforge.net/
+
+https://github.com/XhmikosR/jpegoptim-windows
