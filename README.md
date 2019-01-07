@@ -37,7 +37,7 @@ jpegtran lib for lossles image optimization<br />
 > jpegtran -copy none -optimize -progressive -outfile testimage-output.jpg testimage.jpg
 
 jpegoptim lib for lossy image optimization<br />
-> jpegoptim --strip-all -m 85 testimage.jpg
+> jpegoptim --strip-all --all-progressive -m85 testimage.jpg
 
 optipng for PNG<br />
 > optipng -o5 testimage.png
