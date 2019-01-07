@@ -85,3 +85,5 @@ https://github.com/tjko/jpegoptim
 http://optipng.sourceforge.net/
 
 https://github.com/XhmikosR/jpegoptim-windows
+
+http://xhmikosr.1f0.de/tools/image-tools/
