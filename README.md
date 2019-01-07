@@ -1,4 +1,4 @@
-## Image-Optimization-Utilities-for-Website-Performance
+## Image Optimization Utilities for Website Performance
 Today everyone may find himself in need of rapidly optimzing batch of images in your website. There are useful utility libraries that can help you reduce image sizes with simple shell commands in the terminal. The following list show some of the best tools available and also recommended by Google:
 
 ### Tools and parameter tuning (Libraries available for both Windows & Linux)
