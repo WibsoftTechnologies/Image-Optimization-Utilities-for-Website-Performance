@@ -1,4 +1,4 @@
-jpegoptim v1.2.2  Copyright (c) Timo Kokkonen, 1996,2002.
+<pre>jpegoptim v1.2.2  Copyright (c) Timo Kokkonen, 1996,2002.
 Usage: jpegoptim [options] <filenames>
 
   -d<path>, --dest=<path>
@@ -19,4 +19,4 @@ Usage: jpegoptim [options] <filenames>
 
   --strip-all     strip all (Comment & Exif) markers from output file
   --strip-com     strip Comment markers from output file
-  --strip-exif    strip Exif markers from output file
+  --strip-exif    strip Exif markers from output file</pre>
