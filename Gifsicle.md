@@ -1,4 +1,4 @@
-'Gifsicle' manipulates GIF images. Its most common uses include combining single images into animations, adding transparency, optimizing animations for space, and printing information about GIFs.
+<pre>'Gifsicle' manipulates GIF images. Its most common uses include combining single images into animations, adding transparency, optimizing animations for space, and printing information about GIFs.
 
 Mode options: at most one, before any filenames.
   -m, --merge                   Merge mode: combine inputs, write stdout.
@@ -71,3 +71,4 @@ Whole-GIF options: Also --no-OPTION.
       --transform-colormap CMD  Transform each output colormap by shell CMD.
       --use-colormap CMAP       Set output GIF's colormap to CMAP, which can
                                 be 'web', 'gray', 'bw', or a GIF file.
+</pre>
