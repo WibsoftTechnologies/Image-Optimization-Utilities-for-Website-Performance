@@ -1,5 +1,15 @@
-<pre>OptiPNG 0.6.5: Advanced PNG optimizer.
-Copyright (C) 2001-2011 Cosmin Truta.
+<pre>OptiPNG version 0.7.4
+Copyright (C) 2001-2012 Cosmin Truta and the Contributing Authors.
+
+This program is open-source software. See LICENSE for more details.
+
+Portions of this software are based in part on the work of:
+  Jean-loup Gailly and Mark Adler (zlib)
+  Glenn Randers-Pehrson and the PNG Development Group (libpng)
+  Miyasaka Masaru (BMP support)
+  David Koblas (GIF support)
+
+Using libpng version 1.4.12 and zlib version 1.2.7-optipng
 
 Synopsis:
     optipng [options] files ...
@@ -7,50 +17,51 @@ Files:
     Image files of type: PNG, BMP, GIF, PNM or TIFF
 Basic options:
     -?, -h, -help       show this help
-    -o <level>          optimization level (0-7)                default 2
-    -v                  verbose mode / show copyright and version info
+    -o <level>          optimization level (0-7)                [default: 2]
+    -v                  run in verbose mode / show copyright and version info
 General options:
+    -backup, -keep      keep a backup of the modified files
+    -clobber            overwrite existing files
     -fix                enable error recovery
     -force              enforce writing of a new output file
-    -keep               keep a backup of the modified files
     -preserve           preserve file attributes if possible
-    -quiet              quiet mode
-    -simulate           simulation mode
-    -snip               cut one image out of multi-image or animation files
+    -quiet, -silent     run in quiet mode
+    -simulate           run in simulation mode
     -out <file>         write output file to <file>
     -dir <directory>    write output file(s) to <directory>
     -log <file>         log messages to <file>
     --                  stop option switch parsing
 Optimization options:
-    -f  <filters>       PNG delta filters (0-5)                 default 0,5
-    -i  <type>          PNG interlace type (0-1)                default <input>
-    -zc <levels>        zlib compression levels (1-9)           default 9
-    -zm <levels>        zlib memory levels (1-9)                default 8
-    -zs <strategies>    zlib compression strategies (0-3)       default 0-3
-    -zw <window size>   zlib window size (32k,16k,8k,4k,2k,1k,512,256)
+    -f <filters>        PNG delta filters (0-5)                 [default: 0,5]
+    -i <type>           PNG interlace type (0-1)
+    -zc <levels>        zlib compression levels (1-9)           [default: 9]
+    -zm <levels>        zlib memory levels (1-9)                [default: 8]
+    -zs <strategies>    zlib compression strategies (0-3)       [default: 0-3]
+    -zw <size>          zlib window size (256,512,1k,2k,4k,8k,16k,32k)
     -full               produce a full report on IDAT (might reduce speed)
     -nb                 no bit depth reduction
     -nc                 no color type reduction
     -np                 no palette reduction
     -nx                 no reductions
     -nz                 no IDAT recoding
-Optimization details:
-    The optimization level presets
-        -o0  <=>  -o1 -nx -nz
-        -o1  <=>  [use the libpng heuristics]   (1 trial)
-        -o2  <=>  -zc9 -zm8 -zs0-3 -f0,5        (8 trials)
-        -o3  <=>  -zc9 -zm8-9 -zs0-3 -f0,5      (16 trials)
-        -o4  <=>  -zc9 -zm8 -zs0-3 -f0-5        (24 trials)
-        -o5  <=>  -zc9 -zm8-9 -zs0-3 -f0-5      (48 trials)
-        -o6  <=>  -zc1-9 -zm8 -zs0-3 -f0-5      (120 trials)
-        -o7  <=>  -zc1-9 -zm8-9 -zs0-3 -f0-5    (240 trials)
-    The libpng heuristics
-        -o1  <=>  -zc9 -zm8 -zs0 -f0            (if PLTE is present)
-        -o1  <=>  -zc9 -zm8 -zs1 -f5            (if PLTE is not present)
-    The most exhaustive search (not generally recommended)
-      [no preset] -zc1-9 -zm1-9 -zs0-3 -f0-5    (1080 trials)
+Editing options:
+    -snip               cut one image out of multi-image or animation files
+    -strip <objects>    strip metadata objects (e.g. "all")
+Optimization levels:
+    -o0         <=>     -o1 -nx -nz                             (0 or 1 trials)
+    -o1         <=>     -zc9 -zm8 -zs0 -f0                      (1 trial)
+                (or...) -zc9 -zm8 -zs1 -f5                      (1 trial)
+    -o2         <=>     -zc9 -zm8 -zs0-3 -f0,5                  (8 trials)
+    -o3         <=>     -zc9 -zm8-9 -zs0-3 -f0,5                (16 trials)
+    -o4         <=>     -zc9 -zm8 -zs0-3 -f0-5                  (24 trials)
+    -o5         <=>     -zc9 -zm8-9 -zs0-3 -f0-5                (48 trials)
+    -o6         <=>     -zc1-9 -zm8 -zs0-3 -f0-5                (120 trials)
+    -o7         <=>     -zc1-9 -zm8-9 -zs0-3 -f0-5              (240 trials)
+    -o7 -zm1-9  <=>     -zc1-9 -zm1-9 -zs0-3 -f0-5              (1080 trials)
+Notes:
+    The combination for -o1 is chosen heuristically.
+    Exhaustive combinations such as "-o7 -zm1-9" are not generally recommended.
 Examples:
-    optipng file.png                            (default speed)
-    optipng -o5 file.png                        (moderately slow)
-    optipng -o7 file.png                        (very slow)
-    optipng -i1 -o7 -v -full -sim experiment.png</pre>
+    optipng file.png                                            (default speed)
+    optipng -o5 file.png                                        (slow)
+    optipng -o7 file.png                                        (very slow)</pre>
