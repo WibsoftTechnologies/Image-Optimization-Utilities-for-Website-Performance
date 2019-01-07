@@ -75,6 +75,8 @@ Here are some aliases to keep commands nearby for fast run on the active directo
 
 ### Libraries Reference Sites
 
+https://github.com/kohler/gifsicle
+
 https://www.lcdf.org/gifsicle/
 
 https://github.com/tjko/jpegoptim
