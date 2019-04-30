@@ -108,4 +108,6 @@ widthxheight^        Minimum values of width and height given, aspect ratio pres
 widthxheight!        Width and height emphatically given, original aspect ratio ignored.
 widthxheight>        Shrinks an image with dimension(s) larger than the corresponding
                      width and/or height argument(s).
-widthxheight<        Enlarges an image with dimension(s) smaller than the corresponding width and/or height argument(s).</pre>
+widthxheight<        Enlarges an image with dimension(s) smaller than the corresponding
+                     width and/or height argument(s).
+</pre>
