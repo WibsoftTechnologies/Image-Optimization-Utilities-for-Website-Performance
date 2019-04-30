@@ -87,3 +87,10 @@ http://optipng.sourceforge.net/
 https://github.com/XhmikosR/jpegoptim-windows
 
 http://xhmikosr.1f0.de/tools/image-tools/
+
+### Resize Images using ImageMagick Library
+Example command below resize all images above 1920px width in a directory to 1920px width
+
+<pre>find -type f -iname "*.jp*g" -exec convert "{}" -resize '1920>' "{}" \;</pre>
+
+https://imagemagick.org/
