@@ -94,3 +94,18 @@ Example command below resize all images above 1920px width in a directory to 192
 <pre>find -type f -iname "*.jp*g" -exec convert "{}" -resize '1920>' "{}" \;</pre>
 
 https://imagemagick.org/
+
+#### Resizeing command line parameter options for -resize parameter:
+
+<pre>
+scale%               Height and width both scaled by specified percentage.
+scale-x%xscale-y%    Height and width individually scaled by specified percentages.
+                     (Only one % symbol needed.)
+width                Width given, height automagically selected to preserve aspect ratio.
+xheight              Height given, width automagically selected to preserve aspect ratio.
+widthxheight         Maximum values of height and width given, aspect ratio preserved.
+widthxheight^        Minimum values of width and height given, aspect ratio preserved.
+widthxheight!        Width and height emphatically given, original aspect ratio ignored.
+widthxheight>        Shrinks an image with dimension(s) larger than the corresponding
+                     width and/or height argument(s).
+widthxheight<        Enlarges an image with dimension(s) smaller than the corresponding width and/or height argument(s).</pre>
